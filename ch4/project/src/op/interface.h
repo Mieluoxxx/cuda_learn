@@ -3,6 +3,8 @@
 
 #include "base/base.h"
 #include "gpu/add_op.cuh"
+#include "gpu/com_matrix_mul_op.cuh"
+#include "gpu/stencil_1d_op.cuh"
 
 namespace mop{
     // 定义函数指针类型，用于指向加法内核函数
