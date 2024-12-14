@@ -50,7 +50,7 @@ TEST(test_op, com_matrix_mul) {
   checkCudaError(cudaMemcpy(d_A, h_A, DSIZE * DSIZE * sizeof(float), cudaMemcpyHostToDevice), "cudaMemcpy for d_a");
   checkCudaError(cudaMemcpy(d_B, h_B, DSIZE * DSIZE * sizeof(float), cudaMemcpyHostToDevice), "cudaMemcpy for d_b");
 
-  mop::get_com_matrix_mul_op<float>(mbase::DeviceType::Device)(d_A, d_B, d_C, DSIZE, DSIZE);
+  mop::get_com_matmul_op<float>(mbase::DeviceType::Device)(d_A, d_B, d_C, DSIZE, DSIZE);
 
 
   // CUDA处理的第二步完成（计算完成）

@@ -26,7 +26,7 @@ TEST(test_op, log_out) {
   * 打印出结果数组 c 的前 10 个元素。
   * 释放分配的内存。
  */
-TEST(test_op, Add) {
+TEST(test_op, vec_add) {
     const int N = 32 * 1048576;
     float *a, *b, *c;
     float *d_a, *d_b, *d_c; // CUDA 指针

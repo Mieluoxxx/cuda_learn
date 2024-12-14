@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.20)
 set(CMAKE_CUDA_COMPILER "/opt/cuda/bin/nvcc")
 
 # 定义项目名称和使用的编程语言
-project(ch4 CXX CUDA)
+project(ch6 CXX CUDA)
 
 # 包含自定义的CUDA CMake模块
 include(cmake/cuda.cmake)

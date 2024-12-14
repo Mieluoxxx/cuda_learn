@@ -1,6 +1,5 @@
 #include "interface.h"
 
-#include <gpu/com_matrix_mul_op.cuh>
 #include <gpu/stencil_1d_op.cuh>
 
 namespace mop {
